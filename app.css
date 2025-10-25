@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "Portfolio-theme";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #f8f1e7;
+  --color-base-200: #f2e2d9;
+  --color-base-300: #ffe5bf;
+  --color-base-content: #332005;
+  --color-primary: #911313;
+  --color-primary-content: #fff;
+  --color-secondary: oklch(0% 0 0);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: #0000ff;
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: #f2e2d9;
+  --color-neutral-content: #911313;
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(79% 0.209 151.711);
+  --color-success-content: oklch(26% 0.065 152.934);
+  --color-warning: oklch(85% 0.199 91.936);
+  --color-warning-content: oklch(28% 0.066 53.813);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 0;
+  --noise: 0;
+}
+
+.btn-primary-outline {
+  @apply border-2 border-primary;
+  box-shadow: 0.25rem 0.25rem var(--color-primary);
+}
+
+.btn-primary-outline:hover {
+  @apply bg-base-300;
+}
+
+.btn-primary-outline:active {
+  box-shadow: 0.125rem 0.125rem var(--color-primary);
+}
+.h2 {
+  @apply font-serif;
+}
+.body {
+  @apply font-mono;
+}

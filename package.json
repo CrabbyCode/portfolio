@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of @CrabbyCode on Github",
+  "keywords": [
+    "web",
+    "developer",
+    "web",
+    "developer",
+    "portfolio"
+  ],
+  "homepage": "https://github.com/CrabbyCode/portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/CrabbyCode/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrabbyCode/portfolio.git"
+  },
+  "license": "ISC",
+  "author": "@CrabbyCode",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i app.css -o public/output.css --watch"
+  },
+  "devDependencies": {
+    "daisyui": "^5.3.9"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
+}
