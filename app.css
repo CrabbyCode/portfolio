@@ -75,3 +75,7 @@
 .hero-link-wide:active {
   box-shadow: 0.125rem 0.125rem var(--color-primary);
 }
+
+.max-width {
+  @apply max-w-5xl;
+}

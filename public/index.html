@@ -17,18 +17,18 @@
   <body class="font-mono overflow-x-clip">
     <div class="hero bg-base-300 h-screen w-screen grid-bg">
       <!-- scroll indicator -->
-      <div class="absolute bottom-24 right-24 animate-bounce">
+      <div class="absolute bottom-1/12 right-1/12 animate-bounce">
         <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
       </div>
 
-      <div class="flex flex-row align-middle h-full">
-        <div class="w-5xl flex justify-start align-middle my-auto">
+      <div class="flex flex-row w-full max-width">
+        <div class="my-auto mr-auto p-4">
           <div>
             <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
             <p class="py-4 text-2xl">
               Software Engineer, UI/UX Designer, and Web Developer
             </p>
-            <div class="flex flex-row space-x-2">
+            <div class="flex flex-wrap space-x-2 space-y-2">
               <a href="/" class="hero-link btn-square"
                 ><i class="bi bi-dribbble text-2xl text-primary"></i
               ></a>
@@ -49,13 +49,13 @@
       </div>
     </div>
     <!-- content wrapper -->
-    <div class="w-5xl flex flex-col space-y-12 mx-auto py-16">
+    <div class="max-width flex flex-col space-y-12 mx-auto py-16">
       <!--Bio & Skills-->
-      <div class="flex flex-col space-y-8" id="bio&skills">
+      <div class="flex flex-col space-y-8 p-4" id="bio&skills">
         <div class="border-l-8 border-primary px-8">
           <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
         </div>
-        <div class="flex flex-row space-x-8">
+        <div class="flex flex-col md:flex-row space-x-8 space-y-8">
           <div class="w-full space-y-4">
             <h4 class="font-bold text-2xl">A fellow builder of the web!</h4>
             <p class="text-xl">
@@ -112,26 +112,35 @@
       </div>
       <div class="flex flex-row justify-around">
         <div class="flex flex-col">
-          <h1 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h1>
+          <h2 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h2>
           <div class="flex flex-row space-x-4 mb-2">
-            <a href="/" class="hero-link-wide">Email Me</a>
+            <a
+              href="mailto:rayan.abdullah.alharbi@gmail.com"
+              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied').classList.remove('hidden')"
+              class="hero-link-wide"
+              >Email Me</a
+            >
 
             <a href="/" class="hero-link-wide">View CV</a>
           </div>
-          <p class="mx-auto text-primary text-lg">Email copied to clipboard!</p>
+          <p id="email-copied" class="hidden mx-auto text-primary text-lg">
+            Email copied to clipboard!
+          </p>
         </div>
         <!-- image -->
         <!-- should this one point to contact? -->
-        <img class="hidden lg:block animate-bounce" src="pixel_hand1.png" />
+        <img class="hidden lg:block" src="pixel_hand1.png" />
       </div>
     </div>
 
     <!-- footer -->
-    <div class="bg-base-300 py-16 grid-bg">
-      <div class="w-5xl mx-auto flex flex-row justify-between">
-        <h1 class="text-5xl font-bold font-serif mr-auto">Rayan Alharbi</h1>
+    <div class="bg-base-300 py-16 px-4 grid-bg">
+      <div
+        class="max-width flex flex-col justify-between md:flex-row space-y-4 mx-auto"
+      >
+        <h1 class="text-5xl font-bold font-serif">Rayan Alharbi</h1>
 
-        <div class="flex flex-row space-x-2">
+        <div class="flex flex-wrap space-x-2 space-y-2 ml-auto">
           <a href="/" class="hero-link"
             ><i class="bi bi-dribbble text-2xl text-primary"></i
           ></a>

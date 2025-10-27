@@ -8,6 +8,7 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --spacing: 0.25rem;
     --container-5xl: 64rem;
     --text-lg: 1.125rem;
@@ -27,9 +28,6 @@
     --font-weight-bold: 700;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --animate-spin: spin 1s linear infinite;
-    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1045,17 +1043,17 @@
   .absolute {
     position: absolute;
   }
-  .right-16 {
-    right: calc(var(--spacing) * 16);
+  .right-1 {
+    right: calc(var(--spacing) * 1);
   }
-  .right-24 {
-    right: calc(var(--spacing) * 24);
+  .right-1\/12 {
+    right: calc(1/12 * 100%);
   }
-  .bottom-16 {
-    bottom: calc(var(--spacing) * 16);
+  .bottom-1 {
+    bottom: calc(var(--spacing) * 1);
   }
-  .bottom-24 {
-    bottom: calc(var(--spacing) * 24);
+  .bottom-1\/12 {
+    bottom: calc(1/12 * 100%);
   }
   .textarea {
     @layer daisyui.component {
@@ -1212,6 +1210,9 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .ml-auto {
+    margin-left: auto;
+  }
   .badge {
     @layer daisyui.component {
       display: inline-flex;
@@ -1330,29 +1331,11 @@
       height: var(--size);
     }
   }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
-  .h-32 {
-    height: calc(var(--spacing) * 32);
-  }
-  .h-full {
-    height: 100%;
-  }
   .h-screen {
     height: 100vh;
-  }
-  .w-5xl {
-    width: var(--container-5xl);
-  }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
   }
   .w-full {
     width: 100%;
@@ -1360,14 +1343,14 @@
   .w-screen {
     width: 100vw;
   }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .rotate-90 {
-    rotate: 90deg;
   }
   .rotate-270 {
     rotate: 270deg;
@@ -1395,15 +1378,6 @@
   .animate-bounce {
     animation: var(--animate-bounce);
   }
-  .animate-ping {
-    animation: var(--animate-ping);
-  }
-  .animate-pulse {
-    animation: var(--animate-pulse);
-  }
-  .animate-spin {
-    animation: var(--animate-spin);
-  }
   .resize {
     resize: both;
   }
@@ -1421,6 +1395,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-start {
     justify-content: flex-start;
@@ -1481,10 +1458,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-b-8 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 8px;
-  }
   .border-l-8 {
     border-left-style: var(--tw-border-style);
     border-left-width: 8px;
@@ -1500,8 +1473,14 @@
   .border-primary {
     border-color: var(--color-primary);
   }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
+  }
   .bg-base-300 {
     background-color: var(--color-base-300);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .badge-xl {
     @layer daisyui.modifier {
@@ -1509,6 +1488,9 @@
       font-size: 1.125rem;
       padding-inline: calc(0.25rem * 4 - var(--border));
     }
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -1518,9 +1500,6 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .font-mono {
     font-family: var(--font-mono);
@@ -1594,14 +1573,29 @@
       --badge-fg: var(--color-primary-content);
     }
   }
-  .md\:visible {
+  .md\:mx-auto {
     @media (width >= 48rem) {
-      visibility: visible;
+      margin-inline: auto;
     }
   }
-  .md\:block {
+  .md\:mr-auto {
     @media (width >= 48rem) {
-      display: block;
+      margin-right: auto;
+    }
+  }
+  .md\:ml-auto {
+    @media (width >= 48rem) {
+      margin-left: auto;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
     }
   }
   .lg\:block {
@@ -1993,6 +1987,9 @@
 }
 .hero-link:active, .hero-link-wide:active {
   box-shadow: 0.125rem 0.125rem var(--color-primary);
+}
+.max-width {
+  max-width: var(--container-5xl);
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
@@ -2440,22 +2437,6 @@
 @property --tw-ease {
   syntax: "*";
   inherits: false;
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-@keyframes pulse {
-  50% {
-    opacity: 0.5;
-  }
 }
 @keyframes bounce {
   0%, 100% {
