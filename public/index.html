@@ -14,29 +14,136 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="font-mono">
-    <div class="hero bg-base-300 h-screen w-screen">
+  <body class="font-mono overflow-x-clip">
+    <div class="hero bg-base-300 h-screen w-screen grid-bg">
+      <!-- scroll indicator -->
+      <div class="absolute bottom-24 right-24 animate-bounce">
+        <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
+      </div>
+
       <div class="flex flex-row align-middle h-full">
-        <div class="w-4xl flex justify-start align-middle my-auto">
+        <div class="w-5xl flex justify-start align-middle my-auto">
           <div>
-            <h1 class="text-5xl font-bold font-serif">Rayan Alharbi</h1>
-            <p class="py-2 text-xl">
+            <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
+            <p class="py-4 text-2xl">
               Software Engineer, UI/UX Designer, and Web Developer
             </p>
-            <div class="flex flex-row space-x-4"></div>
-            <button class="btn btn-primary-outline">View CV</button>
-            <button class="btn btn-primary-outline">View CV</button>
-
-            <button class="btn btn-primary-outline">View CV</button>
-
-            <button class="btn btn-primary-outline">View CV</button>
+            <div class="flex flex-row space-x-2">
+              <a href="/" class="hero-link btn-square"
+                ><i class="bi bi-dribbble text-2xl text-primary"></i
+              ></a>
+              <a href="/" class="hero-link btn-square"
+                ><i class="bi bi-github text-2xl text-primary"></i
+              ></a>
+              <a href="/" class="hero-link btn-square"
+                ><i class="bi bi-linkedin text-2xl text-primary"></i
+              ></a>
+              <a href="/" class="hero-link btn-square"
+                ><i class="bi bi-envelope-at-fill"></i
+              ></a>
+              <a href="/" class="hero-link-wide">View CV</a>
+            </div>
           </div>
           <!--scroll below button -->
         </div>
-        <div class="flex flex-col justify-end md:flex-row md:justify-end pb-24">
-          <button class="btn btn-primary-outline btn-square">
-            <i class="bi bi-arrow-down-short text-4xl text-primary"></i>
-          </button>
+      </div>
+    </div>
+    <!-- content wrapper -->
+    <div class="w-5xl flex flex-col space-y-12 mx-auto py-16">
+      <!--Bio & Skills-->
+      <div class="flex flex-col space-y-8" id="bio&skills">
+        <div class="border-l-8 border-primary px-8">
+          <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
+        </div>
+        <div class="flex flex-row space-x-8">
+          <div class="w-full space-y-4">
+            <h4 class="font-bold text-2xl">A fellow builder of the web!</h4>
+            <p class="text-xl">
+              I am a <b>Software Engineering</b> graduate from <b>KFUPM</b>. I
+              love <b>web development</b>, <b>UI/UX Design</b>, and art! I
+              believe sophistication is in simplicity.
+            </p>
+          </div>
+          <div class="w-full space-y-4">
+            <h4 class="font-bold text-2xl">Tech Stack</h4>
+            <div class="flex flex-wrap space-x-2 space-y-2">
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">UI&UX Design</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Figma</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">HTML</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">CSS</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">TailwindCSS</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">JavaScript</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Nunjucks.js</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Eleventy/11ty</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">MongoDB</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Node.js</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Python</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Java</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">C#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-around">
+        <div class="flex flex-col">
+          <h1 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h1>
+          <div class="flex flex-row space-x-4 mb-2">
+            <a href="/" class="hero-link-wide">Email Me</a>
+
+            <a href="/" class="hero-link-wide">View CV</a>
+          </div>
+          <p class="mx-auto text-primary text-lg">Email copied to clipboard!</p>
+        </div>
+        <!-- image -->
+        <!-- should this one point to contact? -->
+        <img class="hidden lg:block animate-bounce" src="pixel_hand1.png" />
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-base-300 py-16 grid-bg">
+      <div class="w-5xl mx-auto flex flex-row justify-between">
+        <h1 class="text-5xl font-bold font-serif mr-auto">Rayan Alharbi</h1>
+
+        <div class="flex flex-row space-x-2">
+          <a href="/" class="hero-link"
+            ><i class="bi bi-dribbble text-2xl text-primary"></i
+          ></a>
+          <a href="/" class="hero-link"
+            ><i class="bi bi-github text-2xl text-primary"></i
+          ></a>
+          <a href="/" class="hero-link"
+            ><i class="bi bi-linkedin text-2xl text-primary"></i
+          ></a>
+          <a href="/" class="hero-link"
+            ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
+          ></a>
         </div>
       </div>
     </div>
