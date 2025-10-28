@@ -3,15 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rayan Portfolio</title>
+    <title>Rayan's Portfolio</title>
     <link href="./output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Arbutus+Slab&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_no_outline-export.png"
+      type="image/x-icon"
     />
   </head>
   <body class="font-mono overflow-x-clip">
@@ -29,20 +40,40 @@
               Software Engineer, UI/UX Designer, and Web Developer
             </p>
             <div class="flex flex-wrap space-x-2 space-y-2">
-              <a href="/" class="hero-link btn-square"
+              <!-- <a href="/" class="hero-link "
                 ><i class="bi bi-dribbble text-2xl text-primary"></i
-              ></a>
-              <a href="/" class="hero-link btn-square"
+              ></a> -->
+              <a
+                href="https://github.com/CrabbyCode"
+                target="_blank"
+                class="hero-link"
                 ><i class="bi bi-github text-2xl text-primary"></i
               ></a>
-              <a href="/" class="hero-link btn-square"
+              <a
+                href="https://www.linkedin.com/in/rayan-alharbi-2182942a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="hero-link"
                 ><i class="bi bi-linkedin text-2xl text-primary"></i
               ></a>
-              <a href="/" class="hero-link btn-square"
+              <a
+                href="mailto:rayan.abdullah.alharbi@gmail.com"
+                class="hero-link"
+                onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-hero').classList.remove('hidden')"
                 ><i class="bi bi-envelope-at-fill"></i
               ></a>
-              <a href="/" class="hero-link-wide">View CV</a>
+              <a
+                href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view"
+                target="_blank"
+                class="hero-link-wide"
+                >View CV</a
+              >
             </div>
+            <p
+              id="email-copied-hero"
+              class="hidden mx-auto text-primary font-bold text-lg"
+            >
+              Email copied to clipboard!
+            </p>
           </div>
           <!--scroll below button -->
         </div>
@@ -51,7 +82,7 @@
     <!-- content wrapper -->
     <div class="max-width flex flex-col space-y-12 mx-auto py-16">
       <!--Bio & Skills-->
-      <div class="flex flex-col space-y-8 p-4" id="bio&skills">
+      <div class="flex flex-col space-y-8 p-4" id="bio&skills-section">
         <div class="border-l-8 border-primary px-8">
           <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
         </div>
@@ -110,7 +141,49 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-row justify-around">
+      <!--Projects-->
+      <div class="flex flex-col space-y-8 p-4" id="projects-section">
+        <div class="border-l-8 border-primary px-8">
+          <h3 class="text-4xl font-serif font-bold">Projects</h3>
+        </div>
+        <!-- project 1 -->
+        <div class="flex md:flex-row flex-col space-x-8 space-y-8">
+          <!-- project details -->
+          <div class="space-y-2">
+            <p>UI/UX Designer</p>
+            <h3 class="text-2xl font-serif font-bold">
+              WSL: AI-Powered Medical Reports Compatibility Tool
+            </h3>
+            <div class="flex flex-wrap space-x-2 space-y-2">
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">UI&UX Design</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Figma</span>
+              </div>
+            </div>
+            <p class="text-xl">
+              My senior project. Worked with a team of 7 as a UI/UX designer. I
+              designed and improved on user experience for a critical system of
+              medical insurance.
+            </p>
+            <a
+              href="https://www.figma.com/proto/yyX1kCrML4T2sTQyqr6KOy/WSL-experimental?page-id=5488%3A1723&team_id=1418367986454868641&node-id=7500-1862&starting-point-node-id=7500%3A1862&t=HmeGoB6ZbfwmL4Bx-1"
+              target="_blank"
+              class="hero-link-wide"
+              >View Project</a
+            >
+          </div>
+
+          <!-- project preview image -->
+          <img
+            class="project-screenshot"
+            src="project_screenshot_wsl.png"
+            alt="Project Screenshot"
+          />
+        </div>
+      </div>
+      <div class="flex flex-row justify-around py-8">
         <div class="flex flex-col">
           <h2 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h2>
           <div class="flex flex-row space-x-4 mb-2">
@@ -121,9 +194,17 @@
               >Email Me</a
             >
 
-            <a href="/" class="hero-link-wide">View CV</a>
+            <a
+              href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view"
+              target="_blank"
+              class="hero-link-wide"
+              >View CV</a
+            >
           </div>
-          <p id="email-copied" class="hidden mx-auto text-primary text-lg">
+          <p
+            id="email-copied"
+            class="hidden mx-auto text-primary font-bold text-lg"
+          >
             Email copied to clipboard!
           </p>
         </div>
@@ -138,21 +219,48 @@
       <div
         class="max-width flex flex-col justify-between md:flex-row space-y-4 mx-auto"
       >
-        <h1 class="text-5xl font-bold font-serif">Rayan Alharbi</h1>
-
-        <div class="flex flex-wrap space-x-2 space-y-2 ml-auto">
-          <a href="/" class="hero-link"
+        <div class="group md:mx-0 mx-auto sm:text-left text-center">
+          <p class="text-lg">
+            Made with
+            <i
+              class="bi bi-heart-fill text-primary text-sm group-hover:animate-pulse"
+            ></i>
+            by
+          </p>
+          <h1 class="text-5xl font-bold font-serif text-center">
+            Rayan Alharbi
+          </h1>
+        </div>
+        <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end">
+          <div class="flex flex-wrap space-x-2 space-y-2 ml-auto">
+            <!-- <a href="/" class="hero-link"
             ><i class="bi bi-dribbble text-2xl text-primary"></i
-          ></a>
-          <a href="/" class="hero-link"
-            ><i class="bi bi-github text-2xl text-primary"></i
-          ></a>
-          <a href="/" class="hero-link"
-            ><i class="bi bi-linkedin text-2xl text-primary"></i
-          ></a>
-          <a href="/" class="hero-link"
-            ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
-          ></a>
+          ></a> -->
+            <a
+              href="https://github.com/CrabbyCode"
+              target="_blank"
+              class="hero-link"
+              ><i class="bi bi-github text-2xl text-primary"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rayan-alharbi-2182942a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              class="hero-link"
+              ><i class="bi bi-linkedin text-2xl text-primary"></i
+            ></a>
+            <a
+              href="mailto:rayan.abdullah.alharbi@gmail.com"
+              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-footer').classList.remove('hidden')"
+              class="hero-link"
+              ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
+            ></a>
+          </div>
+          <p
+            id="email-copied-footer"
+            class="hidden mx-auto text-primary font-bold text-lg"
+          >
+            Email copied to clipboard!
+          </p>
         </div>
       </div>
     </div>
