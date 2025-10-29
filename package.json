@@ -23,7 +23,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx @tailwindcss/cli -i app.css -o public/output.css --watch"
+    "build:css": "npx @tailwindcss/cli -i app.css -o output.css --watch"
   },
   "devDependencies": {
     "daisyui": "^5.3.10"

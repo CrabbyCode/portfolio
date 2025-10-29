@@ -34,9 +34,8 @@
   --depth: 0;
   --noise: 0;
 }
-
-.h2 {
-  @apply font-serif;
+html {
+  @apply scroll-smooth;
 }
 body {
   @apply font-mono;
@@ -83,7 +82,7 @@ h6 {
 }
 
 .hero-link-wide {
-  @apply btn btn-primary bg-base-200 btn-lg border-2 border-primary text-primary text-2xl;
+  @apply btn btn-primary bg-base-200 btn-lg border-2 border-primary text-primary text-xl;
   box-shadow: 0.25rem 0.25rem var(--color-primary);
 }
 
@@ -102,7 +101,8 @@ h6 {
 }
 
 .project-screenshot {
-  @apply btn-primary size-fit bg-base-200 my-auto mx-auto btn-lg border-2 border-primary text-primary;
+  @apply btn-primary bg-base-200   border-primary text-primary;
+  border-width: 3px;
   box-shadow: 0.5rem 0.5rem var(--color-primary);
 }
 

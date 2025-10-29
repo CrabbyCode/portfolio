@@ -29,16 +29,20 @@
     <div class="hero bg-base-300 h-screen w-screen grid-bg">
       <!-- scroll indicator -->
       <div class="absolute bottom-1/12 right-1/12 animate-bounce">
-        <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
+        <a href="#bio&skills-section">
+          <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
+        </a>
       </div>
 
       <div class="flex flex-row w-full max-width">
         <div class="my-auto mr-auto p-4">
-          <div>
-            <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
-            <p class="py-4 text-2xl">
-              Software Engineer, UI/UX Designer, and Web Developer
-            </p>
+          <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-2">
+              <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
+              <p class="text-2xl">
+                Software Engineer, UI/UX Designer, and Web Developer
+              </p>
+            </div>
             <div class="flex flex-wrap space-x-2 space-y-2">
               <!-- <a href="/" class="hero-link "
                 ><i class="bi bi-dribbble text-2xl text-primary"></i
@@ -70,7 +74,7 @@
             </div>
             <p
               id="email-copied-hero"
-              class="hidden mx-auto text-primary font-bold text-lg"
+              class="hidden mx-auto text-primary font-bold text-lg h-0"
             >
               Email copied to clipboard!
             </p>
@@ -83,20 +87,22 @@
     <div class="max-width flex flex-col space-y-12 mx-auto py-16">
       <!--Bio & Skills-->
       <div class="flex flex-col space-y-8 p-4" id="bio&skills-section">
-        <div class="border-l-8 border-primary px-8">
+        <div class="border-l-8 border-primary px-4">
           <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
         </div>
         <div class="flex flex-col md:flex-row space-x-8 space-y-8">
-          <div class="w-full space-y-4">
-            <h4 class="font-bold text-2xl">A fellow builder of the web!</h4>
+          <div class="w-full space-y-2">
+            <h4 class="font-bold text-2xl" style="font-family: 'Arbutus Slab'">
+              A fellow builder of the web!
+            </h4>
             <p class="text-xl">
               I am a <b>Software Engineering</b> graduate from <b>KFUPM</b>. I
               love <b>web development</b>, <b>UI/UX Design</b>, and art! I
               believe sophistication is in simplicity.
             </p>
           </div>
-          <div class="w-full space-y-4">
-            <h4 class="font-bold text-2xl">Tech Stack</h4>
+          <div class="w-full space-y-2">
+            <h4 class="font-serif font-bold text-2xl">Tech Stack</h4>
             <div class="flex flex-wrap space-x-2 space-y-2">
               <div class="badge badge-xl badge-outline badge-primary">
                 <span class="text-base-content">UI&UX Design</span>
@@ -143,17 +149,19 @@
       </div>
       <!--Projects-->
       <div class="flex flex-col space-y-8 p-4" id="projects-section">
-        <div class="border-l-8 border-primary px-8">
+        <div class="border-l-8 border-primary px-4">
           <h3 class="text-4xl font-serif font-bold">Projects</h3>
         </div>
         <!-- project 1 -->
         <div class="flex md:flex-row flex-col space-x-8 space-y-8">
           <!-- project details -->
-          <div class="space-y-2">
-            <p>UI/UX Designer</p>
-            <h3 class="text-2xl font-serif font-bold">
-              WSL: AI-Powered Medical Reports Compatibility Tool
-            </h3>
+          <div class="space-y-4">
+            <div>
+              <p>UI/UX Designer</p>
+              <h3 class="text-2xl font-serif font-bold">
+                WSL: AI-Powered Medical Reports Compatibility Tool
+              </h3>
+            </div>
             <div class="flex flex-wrap space-x-2 space-y-2">
               <div class="badge badge-xl badge-outline badge-primary">
                 <span class="text-base-content">UI&UX Design</span>
@@ -175,12 +183,13 @@
             >
           </div>
 
-          <!-- project preview image -->
-          <img
-            class="project-screenshot"
-            src="project_screenshot_wsl.png"
-            alt="Project Screenshot"
-          />
+          <div class="my-auto">
+            <img
+              class="project-screenshot"
+              src="project_screenshot_wsl.png"
+              alt="Project Screenshot"
+            />
+          </div>
         </div>
       </div>
       <div class="flex flex-row justify-around py-8">
@@ -190,7 +199,7 @@
             <a
               href="mailto:rayan.abdullah.alharbi@gmail.com"
               onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied').classList.remove('hidden')"
-              class="hero-link-wide"
+              class="hero-link-wide text-xl"
               >Email Me</a
             >
 
@@ -217,10 +226,10 @@
     <!-- footer -->
     <div class="bg-base-300 py-16 px-4 grid-bg">
       <div
-        class="max-width flex flex-col justify-between md:flex-row space-y-4 mx-auto"
+        class="max-width flex flex-col lg:justify-between justify-around md:flex-row space-y-8 mx-auto"
       >
-        <div class="group md:mx-0 mx-auto sm:text-left text-center">
-          <p class="text-lg">
+        <div class="group md:mx-0 mx-auto md:text-left text-center space-y-8">
+          <p class="text-lg h-0">
             Made with
             <i
               class="bi bi-heart-fill text-primary text-sm group-hover:animate-pulse"
@@ -232,7 +241,7 @@
           </h1>
         </div>
         <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end">
-          <div class="flex flex-wrap space-x-2 space-y-2 ml-auto">
+          <div class="flex flex-wrap space-x-2 space-y-2">
             <!-- <a href="/" class="hero-link"
             ><i class="bi bi-dribbble text-2xl text-primary"></i
           ></a> -->
@@ -255,12 +264,12 @@
               ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
             ></a>
           </div>
-          <p
+          <!-- <p
             id="email-copied-footer"
             class="hidden mx-auto text-primary font-bold text-lg"
           >
             Email copied to clipboard!
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
