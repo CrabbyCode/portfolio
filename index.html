@@ -76,7 +76,7 @@
               >
             </div>
             <p id="email-copied-hero" class="hidden text-primary text-lg h-0">
-              Email copied to clipboard!
+              Copied email to clipboard!
             </p>
           </div>
           <!--scroll below button -->
@@ -211,7 +211,7 @@
             >
           </div>
           <p id="email-copied" class="hidden mx-auto text-primary text-lg">
-            Email copied to clipboard!
+            Copied email to clipboard!
           </p>
         </div>
         <!-- image -->
@@ -237,7 +237,7 @@
             Rayan Alharbi
           </h1>
         </div>
-        <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end">
+        <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end relative">
           <div class="flex flex-wrap space-x-2 space-y-2">
             <a
               href="https://dribbble.com/rayan_the_designer"
@@ -260,16 +260,16 @@
             <a
               href="mailto:rayan.abdullah.alharbi@gmail.com"
               onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-footer').classList.remove('hidden')"
-              class="hero-link"
+              class="hero-link block"
               ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
             ></a>
           </div>
-          <!-- <p
+          <p
             id="email-copied-footer"
-            class="hidden mx-auto text-primary font-bold text-lg"
+            class="hidden text-primary text-lg absolute top-14 right-0"
           >
-            Email copied to clipboard!
-          </p> -->
+            Copied email to clipboard!
+          </p>
         </div>
       </div>
     </div>
