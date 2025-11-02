@@ -101,9 +101,7 @@ h6 {
 }
 
 .project-screenshot {
-  @apply btn-primary bg-base-200   border-primary text-primary;
-  border-width: 3px;
-  box-shadow: 0.5rem 0.5rem var(--color-primary);
+  @apply btn-primary bg-base-200 border-primary border-4 text-primary;
 }
 
 .badge:hover {
