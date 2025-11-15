@@ -107,9 +107,10 @@ h6 {
 .badge {
   @apply badge-lg;
 }
-.badge:hover {
+/* hover effects should only be added to interactable items */
+/* .badge:hover {
   @apply transition-colors duration-200 bg-base-200;
-}
+} */
 
 * {
   scrollbar-color: var(--color-primary) var(--color-base-300);

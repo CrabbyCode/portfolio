@@ -944,14 +944,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline: calc(0.25rem * 3.5 - var(--border));
   }
 }
-.badge:hover {
-  background-color: var(--color-base-200);
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 200ms;
-  transition-duration: 200ms;
-}
 * {
   scrollbar-color: var(--color-primary) var(--color-base-300);
   scrollbar-width: thin;
@@ -1321,10 +1313,6 @@ h1, h2, h3, h4, h5, h6 {
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
 @keyframes pulse {
   50% {
     opacity: 0.5;
@@ -1347,7 +1335,6 @@ h1, h2, h3, h4, h5, h6 {
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-duration: initial;
     }
   }
 }
