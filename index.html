@@ -10,232 +10,308 @@ Take a break, have a cup of coffee!
 -->
 <!DOCTYPE html>
 <html lang="en" data-theme="Portfolio-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayan's Portfolio</title>
+    <meta property="og:title" content="Rayan's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://crabbycode.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://crabbycode.github.io/portfolio/cover.png"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Rayan Alharbi, a Software Engineer from KFUPM. Interested in web development and UI/UX Design."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rayan's Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Rayan Alharbi, a Software Engineer from KFUPM. Interested in web development and UI/UX Design."
+    />
+    <meta
+      name="twitter:image"
+      content="https://crabbycode.github.io/portfolio/cover.png"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rayan's Portfolio</title>
-  <meta property="og:title" content="Rayan's Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://crabbycode.github.io/portfolio/" />
-  <meta property="og:image" content="https://crabbycode.github.io/portfolio/cover.png" />
-  <meta property="og:description" content="Portfolio of Rayan Alharbi, a Software Engineer from KFUPM. Interested in web development and UI/UX Design." />
-  <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Rayan's Portfolio" />
-<meta name="twitter:description" content="Portfolio of Rayan Alharbi, a Software Engineer from KFUPM. Interested in web development and UI/UX Design." />
-<meta name="twitter:image" content="https://crabbycode.github.io/portfolio/cover.png" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Arbutus+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_no_outline-export.png"
+      type="image/x-icon"
+    />
+  </head>
 
-  <link href="./output.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Arbutus+Slab&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <link rel="shortcut icon" href="favicon_no_outline-export.png" type="image/x-icon" />
-</head>
+  <body class="font-mono overflow-x-clip">
+    <div class="hero bg-base-300 h-screen w-screen grid-bg">
+      <!-- scroll indicator -->
+      <div class="absolute bottom-1/12 right-1/12 animate-bounce">
+        <a href="#content">
+          <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
+        </a>
+      </div>
 
-<body class="font-mono overflow-x-clip">
-  <div class="hero bg-base-300 h-screen w-screen grid-bg">
-    <!-- scroll indicator -->
-    <div class="absolute bottom-1/12 right-1/12 animate-bounce">
-      <a href="#content">
-        <img class="W-12 h-12 rotate-270" src="pixel_hand1.png" />
-      </a>
-    </div>
-
-    <div class="flex flex-row w-full max-width">
-      <div class="my-auto mr-auto p-4">
-        <div class="flex flex-col space-y-4">
-          <div class="flex flex-col space-y-2">
-            <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
-            <p class="text-2xl">
-              Software Engineer, UI/UX Designer, and Web Developer
-            </p>
-          </div>
-          <div class="flex flex-wrap space-x-2 space-y-2">
-            <!-- <a
+      <div class="flex flex-row w-full max-width">
+        <div class="my-auto mr-auto p-4">
+          <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-2">
+              <h1 class="text-6xl font-bold font-serif">Rayan Alharbi</h1>
+              <p class="text-2xl">
+                Software Engineer, UI/UX Designer, and Web Developer
+              </p>
+            </div>
+            <div class="flex flex-wrap space-x-2 space-y-2">
+              <!-- <a
                 href="https://dribbble.com/rayan_h"
                 target="_blank"
                 class="hero-link"
                 ><i class="bi bi-dribbble text-2xl text-primary"></i
               ></a> -->
-            <a href="https://github.com/CrabbyCode" target="_blank" class="hero-link"><i
-                class="bi bi-github text-2xl text-primary"></i></a>
-            <a href="https://www.linkedin.com/in/rayan-alharbi-swe/" target="_blank" class="hero-link"><i
-                class="bi bi-linkedin text-2xl text-primary"></i></a>
-            <a href="mailto:rayan.abdullah.alharbi@gmail.com" class="hero-link"
-              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-hero').classList.remove('hidden')"><i
-                class="bi bi-envelope-at-fill"></i></a>
-            <a href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view" target="_blank"
-              class="hero-link-wide">View CV</a>
+              <a
+                href="https://github.com/CrabbyCode"
+                target="_blank"
+                class="hero-link"
+                ><i class="bi bi-github text-2xl text-primary"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rayan-alharbi-swe/"
+                target="_blank"
+                class="hero-link"
+                ><i class="bi bi-linkedin text-2xl text-primary"></i
+              ></a>
+              <a
+                href="mailto:rayan.abdullah.alharbi@gmail.com"
+                class="hero-link"
+                onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-hero').classList.remove('hidden')"
+                ><i class="bi bi-envelope-at-fill"></i
+              ></a>
+              <a
+                href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view"
+                target="_blank"
+                class="hero-link-wide"
+                >View CV</a
+              >
+            </div>
+            <p id="email-copied-hero" class="hidden text-primary text-lg h-0">
+              Copied email to clipboard!
+            </p>
           </div>
-          <p id="email-copied-hero" class="hidden text-primary text-lg h-0">
+          <!--scroll below button -->
+        </div>
+      </div>
+    </div>
+    <!-- content wrapper -->
+    <div class="max-width flex flex-col space-y-12 mx-auto py-16" id="content">
+      <!--Bio & Skills-->
+      <div class="flex flex-col space-y-8 p-4" id="bio&skills-section">
+        <div class="border-l-8 border-primary px-4">
+          <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
+        </div>
+        <div class="flex flex-col md:flex-row space-x-8 space-y-8">
+          <div class="w-full space-y-2">
+            <h4 class="font-bold text-2xl" style="font-family: 'Arbutus Slab'">
+              A fellow builder of the web!
+            </h4>
+            <p class="text-xl">
+              I am a senior <b>Software Engineering</b> student at <b>KFUPM</b>.
+              I love <b>web development</b>, <b>UI/UX Design</b>, and art! I
+              believe sophistication is in simplicity.
+            </p>
+          </div>
+          <div class="w-full space-y-2">
+            <h4 class="font-serif font-bold text-2xl">Tech Stack</h4>
+            <div class="flex flex-wrap space-x-2 space-y-2">
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Python</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Java</span>
+              </div>
+
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">C#</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">HTML</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">CSS</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">JavaScript</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">SQL</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">MongoDB</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Node.js</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Nunjucks.js</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">TailwindCSS</span>
+              </div>
+
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Eleventy/11ty</span>
+              </div>
+
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">UI&UX Design</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Projects-->
+      <div class="flex flex-col space-y-8 p-4" id="projects-section">
+        <div class="border-l-8 border-primary px-4">
+          <h3 class="text-4xl font-serif font-bold">Projects</h3>
+        </div>
+        <!-- project 1 -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- project details -->
+          <div class="space-y-4">
+            <div>
+              <p>UI/UX Designer</p>
+              <h3 class="text-2xl font-serif font-bold">
+                Wsl: AI-Powered Medical Report Compatibility Tool
+              </h3>
+            </div>
+            <div class="flex flex-wrap space-x-2 space-y-2">
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">UI&UX Design</span>
+              </div>
+              <div class="badge badge-xl badge-outline badge-primary">
+                <span class="text-base-content">Figma</span>
+              </div>
+            </div>
+            <p class="text-xl">
+              My senior project. I worked with a team of six to design a usable
+              UI for creating and reviewing AI-generated medical reports. I
+              leveraged the mental model of writing tools to create a familiar
+              and memorable user experience.
+            </p>
+            <a
+              href="https://www.figma.com/proto/yyX1kCrML4T2sTQyqr6KOy/WSL-experimental?page-id=5488%3A1723&team_id=1418367986454868641&node-id=7500-1862&starting-point-node-id=7500%3A1862&t=HmeGoB6ZbfwmL4Bx-1"
+              target="_blank"
+              class="hero-link-wide"
+              >View Project</a
+            >
+          </div>
+
+          <div class="my-auto">
+            <img
+              class="project-screenshot"
+              src="project_screenshot_wsl.png"
+              alt="Project Screenshot"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row justify-around py-8">
+        <div class="flex flex-col">
+          <h2 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h2>
+          <div class="flex flex-row space-x-4 mb-2">
+            <a
+              href="mailto:rayan.abdullah.alharbi@gmail.com"
+              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied').classList.remove('hidden')"
+              class="hero-link-wide text-xl"
+              >Email Me</a
+            >
+
+            <a
+              href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view"
+              target="_blank"
+              class="hero-link-wide"
+              >View CV</a
+            >
+          </div>
+          <p id="email-copied" class="hidden mx-auto text-primary text-lg">
             Copied email to clipboard!
           </p>
         </div>
-        <!--scroll below button -->
+        <!-- image -->
+        <!-- should this one point to contact? -->
+        <img class="hidden lg:block" src="pixel_hand1.png" />
       </div>
     </div>
-  </div>
-  <!-- content wrapper -->
-  <div class="max-width flex flex-col space-y-12 mx-auto py-16" id="content">
-    <!--Bio & Skills-->
-    <div class="flex flex-col space-y-8 p-4" id="bio&skills-section">
-      <div class="border-l-8 border-primary px-4">
-        <h3 class="text-4xl font-serif font-bold">Bio & Skills</h3>
-      </div>
-      <div class="flex flex-col md:flex-row space-x-8 space-y-8">
-        <div class="w-full space-y-2">
-          <h4 class="font-bold text-2xl" style="font-family: 'Arbutus Slab'">
-            A fellow builder of the web!
-          </h4>
-          <p class="text-xl">
-            I am a senior <b>Software Engineering</b> student at <b>KFUPM</b>.
-            I love <b>web development</b>, <b>UI/UX Design</b>, and art! I
-            believe sophistication is in simplicity.
+
+    <!-- footer -->
+    <div class="bg-base-300 py-16 px-4 grid-bg">
+      <div
+        class="max-width flex flex-col lg:justify-between justify-around md:flex-row space-y-8 mx-auto"
+      >
+        <div class="group md:mx-0 mx-auto md:text-left text-center space-y-8">
+          <p class="text-lg h-0">
+            Made with
+            <i
+              class="bi bi-heart-fill text-primary text-sm group-hover:animate-pulse"
+            ></i>
+            by
           </p>
+          <h1 class="text-5xl font-bold font-serif text-center">
+            Rayan Alharbi
+          </h1>
         </div>
-        <div class="w-full space-y-2">
-          <h4 class="font-serif font-bold text-2xl">Tech Stack</h4>
+        <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end relative">
           <div class="flex flex-wrap space-x-2 space-y-2">
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">UI&UX Design</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Figma</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">HTML</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">CSS</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">TailwindCSS</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">JavaScript</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Nunjucks.js</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Eleventy/11ty</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">MongoDB</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Node.js</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Python</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Java</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">C#</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Projects-->
-    <div class="flex flex-col space-y-8 p-4" id="projects-section">
-      <div class="border-l-8 border-primary px-4">
-        <h3 class="text-4xl font-serif font-bold">Projects</h3>
-      </div>
-      <!-- project 1 -->
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- project details -->
-        <div class="space-y-4">
-          <div>
-            <p>UI/UX Designer</p>
-            <h3 class="text-2xl font-serif font-bold">
-              Wsl: AI-Powered Medical Report Compatibility Tool
-            </h3>
-          </div>
-          <div class="flex flex-wrap space-x-2 space-y-2">
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">UI&UX Design</span>
-            </div>
-            <div class="badge badge-xl badge-outline badge-primary">
-              <span class="text-base-content">Figma</span>
-            </div>
-          </div>
-          <p class="text-xl">
-            My senior project. I worked with a team of six to design a usable
-            UI for creating and reviewing AI-generated medical reports. I
-            leveraged the mental model of writing tools to create a familiar
-            and memorable user experience.
-          </p>
-          <a href="https://www.figma.com/proto/yyX1kCrML4T2sTQyqr6KOy/WSL-experimental?page-id=5488%3A1723&team_id=1418367986454868641&node-id=7500-1862&starting-point-node-id=7500%3A1862&t=HmeGoB6ZbfwmL4Bx-1"
-            target="_blank" class="hero-link-wide">View Project</a>
-        </div>
-
-        <div class="my-auto">
-          <img class="project-screenshot" src="project_screenshot_wsl.png" alt="Project Screenshot" />
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-row justify-around py-8">
-      <div class="flex flex-col">
-        <h2 class="text-6xl font-bold font-serif mb-6 mx-auto">Contact</h2>
-        <div class="flex flex-row space-x-4 mb-2">
-          <a href="mailto:rayan.abdullah.alharbi@gmail.com"
-            onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied').classList.remove('hidden')"
-            class="hero-link-wide text-xl">Email Me</a>
-
-          <a href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view" target="_blank"
-            class="hero-link-wide">View CV</a>
-        </div>
-        <p id="email-copied" class="hidden mx-auto text-primary text-lg">
-          Copied email to clipboard!
-        </p>
-      </div>
-      <!-- image -->
-      <!-- should this one point to contact? -->
-      <img class="hidden lg:block" src="pixel_hand1.png" />
-    </div>
-  </div>
-
-  <!-- footer -->
-  <div class="bg-base-300 py-16 px-4 grid-bg">
-    <div class="max-width flex flex-col lg:justify-between justify-around md:flex-row space-y-8 mx-auto">
-      <div class="group md:mx-0 mx-auto md:text-left text-center space-y-8">
-        <p class="text-lg h-0">
-          Made with
-          <i class="bi bi-heart-fill text-primary text-sm group-hover:animate-pulse"></i>
-          by
-        </p>
-        <h1 class="text-5xl font-bold font-serif text-center">
-          Rayan Alharbi
-        </h1>
-      </div>
-      <div class="my-auto md:mx-0 mx-auto flex flex-col justify-end relative">
-        <div class="flex flex-wrap space-x-2 space-y-2">
-          <!-- <a
+            <!-- <a
               href="https://dribbble.com/rayan_h"
               target="_blank"
               class="hero-link"
               ><i class="bi bi-dribbble text-2xl text-primary"></i
             ></a> -->
-          <a href="https://github.com/CrabbyCode" target="_blank" class="hero-link"><i
-              class="bi bi-github text-2xl text-primary"></i></a>
-          <a href="https://www.linkedin.com/in/rayan-alharbi-swe/" target="_blank" class="hero-link"><i
-              class="bi bi-linkedin text-2xl text-primary"></i></a>
-          <a href="mailto:rayan.abdullah.alharbi@gmail.com"
-            onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-footer').classList.remove('hidden')"
-            class="hero-link block"><i class="bi bi-envelope-at-fill text-2xl text-primary"></i></a>
+            <a
+              href="https://github.com/CrabbyCode"
+              target="_blank"
+              class="hero-link"
+              ><i class="bi bi-github text-2xl text-primary"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rayan-alharbi-swe/"
+              target="_blank"
+              class="hero-link"
+              ><i class="bi bi-linkedin text-2xl text-primary"></i
+            ></a>
+            <a
+              href="mailto:rayan.abdullah.alharbi@gmail.com"
+              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-footer').classList.remove('hidden')"
+              class="hero-link block"
+              ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
+            ></a>
+          </div>
+          <p
+            id="email-copied-footer"
+            class="hidden text-primary text-lg absolute top-14 right-0"
+          >
+            Copied email to clipboard!
+          </p>
         </div>
-        <p id="email-copied-footer" class="hidden text-primary text-lg absolute top-14 right-0">
-          Copied email to clipboard!
-        </p>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
