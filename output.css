@@ -29,8 +29,6 @@
     --font-weight-bold: 700;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -547,7 +545,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .grid-bg {
   background-color: var(--color-base-300);
-  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.24) 1px, transparent 1px ), linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 1px, transparent 1px);
+  background-image: linear-gradient( to right, rgba(0, 0, 0, 0.24) 1px, transparent 1px ), linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 2px, transparent 2px);
   background-size: 3rem 3rem;
 }
 .hero-link {
@@ -947,6 +945,13 @@ h1, h2, h3, h4, h5, h6 {
 * {
   scrollbar-color: var(--color-primary) var(--color-base-300);
   scrollbar-width: thin;
+}
+.course {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
 }
 @layer base {
   :where(:root),:root:has(input.theme-controller[value=light]:checked),[data-theme=light] {
