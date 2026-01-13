@@ -538,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
 .font-mono {
   font-family: "Funnel Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 450;
+  font-weight: 500;
   font-style: normal;
 }
 ::selection {
