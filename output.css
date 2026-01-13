@@ -536,8 +536,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Arbutus Slab", serif !important;
 }
 .font-mono {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 500;
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
 ::selection {
   background-color: var(--color-primary);
