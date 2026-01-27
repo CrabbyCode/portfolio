@@ -8,7 +8,7 @@ Take a break, have a cup of coffee!
            C|__| \___/   
     
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="Portfolio-theme">
   <head>
     <meta charset="UTF-8" />
@@ -86,7 +86,7 @@ Take a break, have a cup of coffee!
                 ><i class="bi bi-github text-2xl text-primary"></i
               ></a>
               <a
-                href="https://www.linkedin.com/in/rayan-alharbi-swe/"
+                href="https://www.linkedin.com/in/rharbi"
                 target="_blank"
                 class="hero-link"
                 ><i class="bi bi-linkedin text-2xl text-primary"></i
@@ -94,11 +94,18 @@ Take a break, have a cup of coffee!
               <a
                 href="mailto:rayan.abdullah.alharbi@gmail.com"
                 class="hero-link"
-                onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-hero').classList.remove('hidden')"
+                onclick="
+                  navigator.clipboard.writeText(
+                    'rayan.abdullah.alharbi@gmail.com',
+                  );
+                  document
+                    .getElementById('email-copied-hero')
+                    .classList.remove('hidden');
+                "
                 ><i class="bi bi-envelope-at-fill"></i
               ></a>
               <a
-                href="https://drive.google.com/file/d/1CP6WmxMWKY12HvnPLP9qcYVTZtFRBSey/view"
+                href="https://drive.google.com/file/d/1My_nzb5YQDaXHXXlDm2SJRjakaaIwa2T/view?usp=sharing"
                 target="_blank"
                 class="hero-link-wide"
                 >View CV</a
@@ -121,7 +128,10 @@ Take a break, have a cup of coffee!
         </div>
         <div class="flex flex-col md:flex-row space-x-8 space-y-8">
           <div class="w-full space-y-2">
-            <h4 class="font-bold text-2xl" style="font-family: 'Arbutus Slab'">
+            <h4
+              class="font-bold text-2xl"
+              style="font-family: &quot;Arbutus Slab&quot;"
+            >
               A fellow builder of the web!
             </h4>
             <p class="text-xl">
@@ -359,7 +369,14 @@ Take a break, have a cup of coffee!
           <div class="flex flex-row space-x-4 mb-2">
             <a
               href="mailto:rayan.abdullah.alharbi@gmail.com"
-              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied').classList.remove('hidden')"
+              onclick="
+                navigator.clipboard.writeText(
+                  'rayan.abdullah.alharbi@gmail.com',
+                );
+                document
+                  .getElementById('email-copied')
+                  .classList.remove('hidden');
+              "
               class="hero-link-wide text-xl"
               >Email Me</a
             >
@@ -420,7 +437,14 @@ Take a break, have a cup of coffee!
             ></a>
             <a
               href="mailto:rayan.abdullah.alharbi@gmail.com"
-              onclick="navigator.clipboard.writeText('rayan.abdullah.alharbi@gmail.com'); document.getElementById('email-copied-footer').classList.remove('hidden')"
+              onclick="
+                navigator.clipboard.writeText(
+                  'rayan.abdullah.alharbi@gmail.com',
+                );
+                document
+                  .getElementById('email-copied-footer')
+                  .classList.remove('hidden');
+              "
               class="hero-link block"
               ><i class="bi bi-envelope-at-fill text-2xl text-primary"></i
             ></a>
