@@ -66,11 +66,8 @@ h6 {
 }
 .grid-bg {
   background-color: var(--color-base-300);
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.24) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.24) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 2px, transparent 2px);
   background-size: 3rem 3rem; /* size of each square */
 }
@@ -121,4 +118,14 @@ h6 {
 }
 .course {
   @apply space-y-4;
+}
+.experience {
+  @apply space-y-2;
+}
+.blockquote {
+  @apply p-4 border-l-4 border-primary bg-base-200 space-y-2;
+}
+.blockquote > h3 {
+  @apply font-serif text-3xl text-primary;
+  font-family: "Arbutus Slab";
 }
