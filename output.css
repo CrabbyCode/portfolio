@@ -399,9 +399,9 @@
   .overflow-x-clip {
     overflow-x: clip;
   }
-  .border-l-8 {
+  .border-l-4 {
     border-left-style: var(--tw-border-style);
-    border-left-width: 8px;
+    border-left-width: 4px;
   }
   .badge-outline {
     @layer daisyui.modifier {
@@ -537,16 +537,19 @@ html {
 body {
   font-family: var(--font-mono);
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: var(--font-serif);
 }
+h4, h5, h6 {
+  font-family: var(--font-mono);
+}
 .font-serif {
-  font-family: "Arbutus Slab", serif !important;
+  font-family: "Aleo", serif !important;
+  font-optical-sizing: auto;
 }
 .font-mono {
-  font-family: "Funnel Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
   font-style: normal;
 }
 ::selection {
@@ -555,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .grid-bg {
   background-color: var(--color-base-300);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.24) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 2px, transparent 2px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.12) 2px, transparent 2px), linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 2px, transparent 2px);
   background-size: 3rem 3rem;
 }
 .hero-link {

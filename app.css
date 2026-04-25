@@ -42,22 +42,24 @@ body {
 }
 h1,
 h2,
-h3,
+h3 {
+  @apply font-serif;
+}
 h4,
 h5,
 h6 {
-  @apply font-serif;
+  @apply font-mono;
 }
 .font-serif {
-  font-family: "Arbutus Slab", serif !important;
+  font-family: "Aleo", serif !important;
+  font-optical-sizing: auto;
 }
 
 /* Override Tailwind's font-mono */
 .font-mono {
-  font-family: "Funnel Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   /* font-weight accepts values from 300 to 800 */
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -67,8 +69,8 @@ h6 {
 .grid-bg {
   background-color: var(--color-base-300);
   background-image:
-    linear-gradient(to right, rgba(0, 0, 0, 0.24) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 2px, transparent 2px);
+    linear-gradient(to right, rgba(0, 0, 0, 0.12) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 2px, transparent 2px);
   background-size: 3rem 3rem; /* size of each square */
 }
 
