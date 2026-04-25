@@ -487,6 +487,9 @@
   .text-primary {
     color: var(--color-primary);
   }
+  .italic {
+    font-style: italic;
+  }
   .badge-primary {
     @layer daisyui.modifier {
       --badge-color: var(--color-primary);
