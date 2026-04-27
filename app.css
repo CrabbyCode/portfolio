@@ -128,6 +128,6 @@ h6 {
   @apply p-4 border-l-4 border-primary bg-base-200 space-y-2;
 }
 .blockquote > h3 {
-  @apply font-serif text-3xl text-primary;
-  font-family: "Arbutus Slab";
+  @apply font-serif text-3xl text-primary font-semibold;
+  font-family: "Aleo";
 }
