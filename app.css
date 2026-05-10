@@ -74,6 +74,30 @@ h6 {
   background-size: 3rem 3rem; /* size of each square */
 }
 
+/* alternative grid style */
+/* .grid-bg {
+  --bg-color: var(--color-base-300);
+  --pattern-size: 3rem; 
+  --line: color-mix(in srgb, currentColor 4%, transparent);
+
+  background-color: var(--bg-color);
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      var(--line) 0,
+      var(--line) 4px,
+      transparent 0,
+      transparent 50%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      var(--line) 0,
+      var(--line) 4px,
+      transparent 0,
+      transparent 50%
+    );
+  background-size: var(--pattern-size) var(--pattern-size);
+} */
 .hero-link {
   @apply btn btn-primary btn-square bg-base-200 btn-lg border-2 border-primary text-primary;
   box-shadow: 0.25rem 0.25rem var(--color-primary);
