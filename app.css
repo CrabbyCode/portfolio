@@ -41,14 +41,17 @@ body {
   @apply font-mono;
 }
 h1,
-h2,
-h3 {
+h2 {
   @apply font-serif;
 }
+h3,
 h4,
 h5,
 h6 {
   @apply font-mono;
+}
+p {
+  text-wrap: pretty;
 }
 .font-serif {
   font-family: "Aleo", serif !important;
@@ -57,10 +60,11 @@ h6 {
 
 /* Override Tailwind's font-mono */
 .font-mono {
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight accepts values from 300 to 800 */
+  font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.025rem; /*increased letter spacing because Rubik is dense*/
 }
 
 ::selection {
@@ -96,30 +100,6 @@ h6 {
   background-size: 4rem 4rem;
 }
 
-/* alternative grid style */
-/* .grid-bg {
-  --bg-color: var(--color-base-300);
-  --pattern-size: 3rem; 
-  --line: color-mix(in srgb, currentColor 4%, transparent);
-
-  background-color: var(--bg-color);
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      var(--line) 0,
-      var(--line) 4px,
-      transparent 0,
-      transparent 50%
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      var(--line) 0,
-      var(--line) 4px,
-      transparent 0,
-      transparent 50%
-    );
-  background-size: var(--pattern-size) var(--pattern-size);
-} */
 .hero-link {
   @apply btn btn-primary btn-square bg-base-200 btn-lg border-2 border-primary text-primary;
   box-shadow: 0.25rem 0.25rem var(--color-primary);
